@@ -4,5 +4,11 @@ require('chai')
 const { CommandTestSuite } = require('../lib')
 
 describe('CommandTestSuite', () => {
-  new CommandTestSuite('good-factory', {}).use()
+  new CommandTestSuite('good-command', {
+    command: 'good-command',
+    description: 'description',
+    prerequisites: () => {},
+    builder: () => {},
+    handler: () => {}
+  }).use()
 })
