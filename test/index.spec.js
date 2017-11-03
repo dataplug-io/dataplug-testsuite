@@ -51,4 +51,10 @@ describe('dataplug-testsuite', () => {
       .should.have.property('forCustomCommand')
       .that.is.an('function')
   })
+
+  it('has "TestSuite" class', () => {
+    dataplugTestsuite
+      .should.have.property('TestSuite')
+      .that.is.an('function')
+  })
 })
