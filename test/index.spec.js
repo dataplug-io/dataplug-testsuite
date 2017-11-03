@@ -4,15 +4,39 @@ require('chai')
 const dataplugTestsuite = require('../lib')
 
 describe('dataplug-testsuite', () => {
-  it('has "forCollection" function', () => {
+  it('has "CollectionFactoryTestSuite" class', () => {
     dataplugTestsuite
-      .should.have.property('forCollection')
+      .should.have.property('CollectionFactoryTestSuite')
       .that.is.an('function')
   })
 
-  it('has "forFactory" function', () => {
+  it('has "CollectionTestSuite" class', () => {
     dataplugTestsuite
-      .should.have.property('forFactory')
+      .should.have.property('CollectionTestSuite')
+      .that.is.an('function')
+  })
+
+  it('has "CommandTestSuite" class', () => {
+    dataplugTestsuite
+      .should.have.property('CommandTestSuite')
+      .that.is.an('function')
+  })
+
+  it('has "CustomCommandTestSuite" class', () => {
+    dataplugTestsuite
+      .should.have.property('CustomCommandTestSuite')
+      .that.is.an('function')
+  })
+
+  it('has "forCollectionFactory" function', () => {
+    dataplugTestsuite
+      .should.have.property('forCollectionFactory')
+      .that.is.an('function')
+  })
+
+  it('has "forCollection" function', () => {
+    dataplugTestsuite
+      .should.have.property('forCollection')
       .that.is.an('function')
   })
 
