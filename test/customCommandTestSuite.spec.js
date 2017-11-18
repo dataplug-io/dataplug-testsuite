@@ -10,5 +10,5 @@ describe('CustomCommandTestSuite', () => {
     prerequisites: () => {},
     builder: () => {},
     handler: () => {}
-  }).use()
+  }).execute()
 })

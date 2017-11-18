@@ -16,5 +16,5 @@ describe('CollectionTestSuite', () => {
       },
       required: ['property']
     }
-  }).use()
+  }).execute()
 })

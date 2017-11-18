@@ -4,5 +4,5 @@ require('chai')
 const { CollectionFactoryTestSuite } = require('../lib')
 
 describe('CollectionFactoryTestSuite', () => {
-  new CollectionFactoryTestSuite('good-factory', {}).use()
+  new CollectionFactoryTestSuite('good-factory', {}).execute()
 })
